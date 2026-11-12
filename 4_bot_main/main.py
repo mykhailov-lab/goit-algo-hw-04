@@ -2,25 +2,35 @@ def parse_input(user_input):
     cmd, *args = user_input.split()
     cmd = cmd.strip().lower()
     return cmd, *args
+
+
 def add_contact(args, contacts):
     name, phone = args
     contacts[name] = phone
     return "Contact added."
+
+
 def chenge_contact(args,contacts):
     name, phone =args
     if name in contacts:
         contacts[name] = phone
         return "Contact update"
     return "Contact not found"
+
+
 def show_phone(args, contacts):
     name = args[0]
     if name in contacts:
         return contacts[name]
     return "Contact not found"
+
+
 def show_all (contacts):
     if not contacts:
         return 'No contacts found'
     return
+
+
 def main():
     contacts = {}
     print("Welcome to the assistant bot!")
