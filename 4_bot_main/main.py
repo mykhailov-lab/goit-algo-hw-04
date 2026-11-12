@@ -66,4 +66,22 @@ def main():
             print("Invalid command.")
 if __name__ == "__main__":
     main()
+    #Welcome to the assistant bot!
+# hello
+#How can I help you?
+# add
+# Name and Phone please
+# add max 4543
+#Contact added
+# change
+#Name and New_phone please
+# change max 1234
+#Contact update
+#phone
+#User name please
+# phone max
+#1234
+#all
+#max 4543
+#max 1234
 
